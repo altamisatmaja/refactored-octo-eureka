@@ -12,16 +12,17 @@
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-light wow fadeInRight" data-wow-delay=".5s">
                                 <div class="spacer-10"></div>
-                                <h1>Create, sell or collect digital items.</h1>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                                <h1>Jual, beli atau menjadi penjual.</h1>
+                                <p class="lead">Jual beli laptop dengan bantuan sistem rekomendasi untuk mempermudah
+                                    pengambilan keputusan
+                                    membeli</p>
                             </div>
 
                             <div class="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
                                 <div class="box-rounded padding40" data-bgcolor="#ffffff">
-                                    <h3 class="mb10">Sign In</h3>
-                                    <p>Login using an existing account or create a new account <a
-                                            href="register.html">here<span></span></a>.</p>
+                                    <h3 class="mb10">Masuk</h3>
+                                    <p>Masuk menggunakan akun anda atau buat baru <a href="/daftar">disini<span></span></a>.
+                                    </p>
                                     <form name="contactForm" id='contact_form' class="form-border" method="post"
                                         action='blank.php'>
 
@@ -44,13 +45,6 @@
 
                                         <div class="spacer-single"></div>
 
-                                        <!-- social icons -->
-                                        <ul class="list s3">
-                                            <li>Login with:</li>
-                                            <li><a href="#">Facebook</a></li>
-                                            <li><a href="#">Google</a></li>
-                                        </ul>
-                                        <!-- social icons close -->
                                     </form>
                                 </div>
                             </div>

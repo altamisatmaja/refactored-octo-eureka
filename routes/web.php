@@ -20,8 +20,8 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::get('/', [MainPageController::class, 'index']);
-Route::get('/rekomendasi', [RecommendationPageController::class, 'index']);
+Route::get('/rekomendasi', [RecommendationPageController::class, 'index'])->name('product.recommendation');
 Route::get('/jenis-laptop', [CategoriesPageController::class, 'index']);
 Route::get('/masuk', [LoginPageController::class, 'index']);
 Route::get('/daftar', [RegisterPageController::class, 'index']);
-Route::get('/produk/detail', [ProductPageController::class, 'show']);
+Route::get('/produk/{slug}', [ProductPageController::class, 'show'])->name('produk.show');

@@ -3,47 +3,43 @@
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-1">
                 <div class="widget">
-                    <h5>Marketplace</h5>
+                    <h5>Jenis Laptop</h5>
                     <ul>
-                        <li><a href="#">All NFTs</a></li>
-                        <li><a href="#">Art</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Domain Names</a></li>
-                        <li><a href="#">Virtual World</a></li>
-                        <li><a href="#">Collectibles</a></li>
+                        <li><a href="#">Macbook</a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Microsoft</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-1">
                 <div class="widget">
-                    <h5>Resources</h5>
+                    <h5>Bantuan</h5>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Suggestions</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Docs</a></li>
-                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Jual</a></li>
+                        <li><a href="#">Beli</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-1">
                 <div class="widget">
-                    <h5>Community</h5>
+                    <h5>Komunitas</h5>
                     <ul>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Informasi Terbaru</a></li>
+                        <li><a href="#">Brand</a></li>
+                        <li><a href="#">FAQ</a></li>
                         <li><a href="#">Forum</a></li>
-                        <li><a href="#">Mailing List</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-1">
                 <div class="widget">
-                    <h5>Newsletter</h5>
-                    <p>Signup for our newsletter to get the latest news in your inbox.</p>
+                    <h5>Butuh bantuan?</h5>
+                    <p>Jika ada keluhan atau saran. Harap hubungi kami!</p>
                     <form action="blank.php" class="row form-dark" id="form_subscribe" method="post"
                         name="form_subscribe">
                         <div class="col text-center">
@@ -54,7 +50,7 @@
                         </div>
                     </form>
                     <div class="spacer-10"></div>
-                    <small>Your email is safe with us. We don't spam.</small>
+                    <small>Email anda aman di kami</small>
                 </div>
             </div>
         </div>
@@ -65,10 +61,11 @@
                 <div class="col-md-12">
                     <div class="de-flex">
                         <div class="de-flex-col">
-                            <a href="index.html">
-                                <img alt="" class="f-logo" src="{{ asset('images/logo.png') }}" /><span
-                                    class="copy">&copy;
-                                    Copyright 2022 - Gigaland by FAWAZ</span>
+                            <a href="/">
+                                <h2 class="text-black">Laptopland</h2>
+                                <p class="copy">&copy;
+                                    Copyright 2022 - Laptopland</p>
+
                             </a>
                         </div>
                         <div class="de-flex-col">

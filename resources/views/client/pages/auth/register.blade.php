@@ -11,8 +11,8 @@
                     <div class="row">
 
                         <div class="col-md-12 text-center">
-                            <h1>Register</h1>
-                            <p>Anim pariatur cliche reprehenderit</p>
+                            <h1>Daftar</h1>
+                            <p>Siap untuk melakukan penjualan</p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -26,10 +26,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <h3>Don't have an account? Register now.</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                            dicta sunt explicabo.</p>
+                        <h3>Belum punya akun? Daftar sekarang.</h3>
+                        <p>Jual beli laptop dengan bantuan sistem rekomendasi untuk mempermudah pengambilan keputusan
+                            membeli</p>
 
                         <div class="spacer-10"></div>
 
@@ -39,7 +38,7 @@
 
                                 <div class="col-md-6">
                                     <div class="field-set">
-                                        <label>Name:</label>
+                                        <label>Nama:</label>
                                         <input type='text' name='name' id='name' class="form-control">
                                     </div>
                                 </div>
@@ -53,14 +52,14 @@
 
                                 <div class="col-md-6">
                                     <div class="field-set">
-                                        <label>Choose a Username:</label>
+                                        <label>Username:</label>
                                         <input type='text' name='username' id='username' class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="field-set">
-                                        <label>Phone:</label>
+                                        <label>Telepon:</label>
                                         <input type='text' name='phone' id='phone' class="form-control">
                                     </div>
                                 </div>
@@ -74,7 +73,7 @@
 
                                 <div class="col-md-6">
                                     <div class="field-set">
-                                        <label>Re-enter Password:</label>
+                                        <label>Ulangi Password:</label>
                                         <input type='text' name='re-password' id='re-password' class="form-control">
                                     </div>
                                 </div>
@@ -83,7 +82,7 @@
                                 <div class="col-md-12">
 
                                     <div id='submit' class="pull-left">
-                                        <input type='submit' id='send_message' value='Register Now'
+                                        <input type='submit' id='send_message' value='Daftar Sekarang'
                                             class="btn btn-main color-2">
                                     </div>
 
