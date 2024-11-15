@@ -12,16 +12,16 @@
                         <div class="row align-items-center">
                             <div class="col-lg-5 text-light wow fadeInRight" data-wow-delay=".5s">
                                 <div class="spacer-10"></div>
-                                <h1>Jual, beli atau menjadi penjual.</h1>
-                                <p class="lead">Jual beli laptop dengan bantuan sistem rekomendasi untuk mempermudah
-                                    pengambilan keputusan
-                                    membeli</p>
+                                <h1>Sistem rekomendasi laptop</h1>
+                                <p class="lead">Sistem rekomendasi laptop yang akan membantu kamu untuk mencari laptop
+                                    yang cocok buat kamu!</p>
                             </div>
 
                             <div class="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
                                 <div class="box-rounded padding40" data-bgcolor="#ffffff">
                                     <h3 class="mb10">Masuk</h3>
-                                    <p>Masuk menggunakan akun anda atau buat baru <a href="/daftar">disini<span></span></a>.
+                                    <p>Masuk untuk mencoba fitur rekomendasi. Belum punya akun? <a href="/daftar">daftar
+                                            disini<span></span></a>.
                                     </p>
                                     <form name="contactForm" id='contact_form' class="form-border" method="post"
                                         action='blank.php'>
@@ -37,7 +37,7 @@
                                         </div>
 
                                         <div class="field-set">
-                                            <input type='submit' id='send_message' value='Submit'
+                                            <input type='submit' id='send_message' value='Masuk'
                                                 class="btn btn-main btn-fullwidth color-2">
                                         </div>
 

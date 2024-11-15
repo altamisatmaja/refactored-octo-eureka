@@ -13,63 +13,69 @@
                             <h6 class="wow fadeInUp" data-wow-delay=".5s"><span class="text-uppercase id-color-2">Laptopland
                                     Rekomendasi Laptop</span></h6>
                             <div class="spacer-10"></div>
-                            <h1 class="wow fadeInUp" data-wow-delay=".75s">Jual, beli atau menjadi penjual.
+                            <h1 class="wow fadeInUp" data-wow-delay=".75s">Sistem rekomendasi laptop
                             </h1>
                             <p class="wow fadeInUp lead" data-wow-delay="1s">
-                                Jual beli laptop dengan bantuan sistem rekomendasi untuk mempermudah pengambilan keputusan
-                                membeli</p>
+                                Sistem rekomendasi laptop yang akan membantu kamu untuk mencari laptop yang cocok buat kamu!
+                            </p>
                             <div class="spacer-10"></div>
                             <a href="/rekomendasi" class="btn-main wow fadeInUp lead" data-wow-delay="1.25s">Cari
                                 Rekomendasi</a>
                             <div class="mb-sm-30"></div>
                         </div>
                         <div class="col-md-6 xs-hide">
-                            <img src="{{ asset('images/misc/nft.png') }}" class="lazy img-fluid wow fadeIn"
+                            <img src="{{ asset('images/background/bg-laptop-2.png') }}" class="lazy img-fluid wow fadeIn"
                                 data-wow-delay="1.25s" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section-intro" class="no-top no-bottom">
+        <section id="section-intro" class="no-top no-bottom ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-sm-30">
                         <div class="feature-box f-boxed style-3">
-                            <i class="wow fadeInUp bg-color-2 i-boxed icon_wallet"></i>
+                            <i class="wow fadeInUp bg-color-2 i-boxed icon_laptop"></i>
                             <div class="text">
-                                <h4 class="wow fadeInUp">Atur Dompet Anda</h4>
-                                <p class="wow fadeInUp" data-wow-delay=".25s">Siapkan dompet digital Anda untuk memulai
-                                    transaksi jual beli laptop dengan lebih mudah dan aman.</p>
+                                <h4 class="wow fadeInUp">Temukan Laptop yang Tepat</h4>
+                                <p class="wow fadeInUp" data-wow-delay=".25s">Gunakan sistem rekomendasi berbasis algoritma
+                                    cosine similarity untuk menemukan laptop yang sesuai dengan kebutuhan dan preferensi
+                                    Anda.</p>
                             </div>
-                            <i class="wm icon_wallet"></i>
+                            <i class="wm icon_laptop"></i>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-sm-30">
                         <div class="feature-box f-boxed style-3">
                             <i class="wow fadeInUp bg-color-2 i-boxed icon_cloud-upload_alt"></i>
                             <div class="text">
-                                <h4 class="wow fadeInUp">Tambah Laptop Anda</h4>
-                                <p class="wow fadeInUp" data-wow-delay=".25s">Tambahkan laptop yang ingin Anda jual ke
-                                    platform kami dan bantu calon pembeli menemukan produk terbaik.</p>
+                                <h4 class="wow fadeInUp">Analisis Kebutuhan Anda</h4>
+                                <p class="wow fadeInUp" data-wow-delay=".25s">Sistem ini menganalisis spesifikasi
+                                    laptop untuk memberikan rekomendasi laptop, seperti merek,
+                                    penyimpanan, ram, dan
+                                    harga.</p>
                             </div>
                             <i class="wm icon_cloud-upload_alt"></i>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-sm-30">
                         <div class="feature-box f-boxed style-3">
-                            <i class="wow fadeInUp bg-color-2 i-boxed icon_tags_alt"></i>
+                            <i class="wow fadeInUp bg-color-2 i-boxed icon_star"></i>
                             <div class="text">
-                                <h4 class="wow fadeInUp">Jual Laptop Anda</h4>
-                                <p class="wow fadeInUp" data-wow-delay=".25s">Jual laptop Anda dengan mudah menggunakan
-                                    sistem rekomendasi kami untuk memastikan harga yang tepat dan menarik bagi pembeli.</p>
+                                <h4 class="wow fadeInUp">Referensi Terpercaya</h4>
+                                <p class="wow fadeInUp" data-wow-delay=".25s">Dapatkan referensi laptop terbaik berdasarkan
+                                    algoritma kami untuk memastikan Anda membuat
+                                    pilihan yang tepat.</p>
                             </div>
-                            <i class="wm icon_tags_alt"></i>
+                            <i class="wm icon_star"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="spacer-50"></div>
+
 
     </div>
 @endsection

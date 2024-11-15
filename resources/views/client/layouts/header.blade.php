@@ -1,4 +1,4 @@
-<header class="transparent header-light scroll-light">
+<header class="header-light scroll-light">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -23,10 +23,25 @@
                             </li>
                         </ul>
                         <div class="menu_side_area">
-                            <a href="/masuk" class="btn-main btn-wallet"><i
-                                    class="icon_wallet_alt"></i><span>Login</span></a>
+                            @auth
+                                <a href="{{ route('logout') }}" class="btn-main btn-wallet"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <i class="icon_wallet_alt"></i><span>Logout</span>
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            @endauth
+
+                            @guest
+                                <a href="/masuk" class="btn-main btn-wallet">
+                                    <i class="icon_wallet_alt"></i><span>Login</span>
+                                </a>
+                            @endguest
+
                             <span id="menu-btn"></span>
                         </div>
+
                     </div>
                 </div>
             </div>

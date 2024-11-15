@@ -11,7 +11,7 @@ class RecommendationPageController extends Controller
     public function index(Request $request)
     {
         if ($request->has('budget') || $request->has('ram') || $request->has('storage') || $request->has('screen_size') || $request->has('storage_type') || $request->has('processor')) {
-            $baseUrl = 'http://127.0.0.1:5000/recommend';
+            $baseUrl = 'https://bot.refactoredoctoeureka.my.id/recommend';
 
             $queryParams = [
                 'price' => $request->input('budget', 0),

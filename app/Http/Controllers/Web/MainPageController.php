@@ -9,6 +9,7 @@ class MainPageController extends Controller
 {
     public function index()
     {
-        return view('client.pages.main');
+
+        return view('client.pages.main', );
     }
 }
