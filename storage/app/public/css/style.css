@@ -79,7 +79,7 @@ body .owl-stage .owl-item {
     right: 0;
     transform: translateX(-50%);
     width: 100%;
-    background-color: #403f83;
+    background-color: #8364E2;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 9999;
@@ -109,7 +109,7 @@ body .owl-stage .owl-item {
 }
 
 #closeInfoBtn {
-    background-color: #8364E2;
+    background-color: #403f83;
     color: #ffffff;
     font-size: 14px;
     padding: 10px 20px;
@@ -119,7 +119,7 @@ body .owl-stage .owl-item {
 }
 
 #closeInfoBtn:hover {
-    background-color: #8364E2;
+    background-color: #403f83;
 }
 
 #wrapper {

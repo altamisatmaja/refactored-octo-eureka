@@ -127,11 +127,11 @@
 
     </div>
 
-    {{-- <div id="infoModal" class="modal fade" tabindex="-1" aria-labelledby="infoModalLabel">
+    <div id="infoModal" class="modal fade" tabindex="-1" aria-labelledby="infoModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="infoModalLabel">Yuk, isi formulir untuk mendapatkan rekomendasi</h5>
+                    <h5 class="text-black-50" id="infoModalLabel">Yuk, isi formulir untuk mendapatkan rekomendasi</h5>
                 </div>
                 <div class="modal-body">
                     <p>Untuk mendapatkan rekomendasi laptop, harap lengkapi formulir yang tersedia terlebih dahulu.</p>
@@ -141,15 +141,15 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 
-    <div id="infoFixed" class="info-fixed">
+    {{-- <div id="infoFixed" class="info-fixed">
         <div class="info-content">
             <h5 class="modal-title" id="infoModalLabel">Yuk, isi formulir untuk mendapatkan rekomendasi</h5>
             <p>Untuk mendapatkan rekomendasi laptop, harap lengkapi formulir yang tersedia terlebih dahulu.</p>
             <button type="button" class="btn btn-primary" id="closeInfoBtn">Oke siap</button>
         </div>
-    </div>
+    </div> --}}
 
 
 
@@ -161,18 +161,18 @@
                 @if (!Auth::check() || !isset($products['data']) || empty($products['data']))
                     $('#infoModal').modal('show');
 
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const closeInfoBtn = document.getElementById('closeInfoBtn');
-                        const infoFixed = document.getElementById('infoFixed');
+                    // document.addEventListener('DOMContentLoaded', function() {
+                    //     const closeInfoBtn = document.getElementById('closeInfoBtn');
+                    //     const infoFixed = document.getElementById('infoFixed');
 
-                        closeInfoBtn.addEventListener('click', function() {
-                            infoFixed.style.display = 'none';
-                        });
-                    });
+                    //     closeInfoBtn.addEventListener('click', function() {
+                    //         infoFixed.style.display = 'none';
+                    //     });
+                    // });
                 @endif
             });
         </script>
-        <script>
+        {{-- <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const closeInfoBtn = document.getElementById('closeInfoBtn');
                 const infoFixed = document.getElementById('infoFixed');
@@ -181,7 +181,7 @@
                     infoFixed.style.display = 'none';
                 });
             });
-        </script>
+        </script> --}}
 
 
         <script>
