@@ -22,10 +22,9 @@
                                 <a href="/rekomendasi">Rekomendasi<span></span></a>
                             </li>
                         </ul>
-                        <div class="menu_side_area">
+                        <div class="menu_side_area hidden md:block"> <!-- This will hide on mobile (default) and show on medium screens and above -->
                             @auth
-                                <a href="{{ route('logout') }}" class="btn-main"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <a href="{{ route('logout') }}" class="btn-main" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     <span>Logout</span>
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -35,7 +34,7 @@
 
                             @guest
                                 <a href="/masuk" class="btn-main">
-                                    </i><span>Login</span>
+                                    <span>Login</span>
                                 </a>
                             @endguest
 
