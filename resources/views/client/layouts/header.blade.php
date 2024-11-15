@@ -24,9 +24,9 @@
                         </ul>
                         <div class="menu_side_area">
                             @auth
-                                <a href="{{ route('logout') }}" class="btn-main btn-wallet"
+                                <a href="{{ route('logout') }}" class="btn-main"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    <i class="icon_wallet_alt"></i><span>Logout</span>
+                                    <span>Logout</span>
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
@@ -34,8 +34,8 @@
                             @endauth
 
                             @guest
-                                <a href="/masuk" class="btn-main btn-wallet">
-                                    <i class="icon_wallet_alt"></i><span>Login</span>
+                                <a href="/masuk" class="btn-main">
+                                    </i><span>Login</span>
                                 </a>
                             @endguest
 
