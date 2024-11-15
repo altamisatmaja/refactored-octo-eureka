@@ -37,18 +37,18 @@
                                             <div class="field-set">
 
                                                 <h5>Budget</h5>
-                                                <input type="number" name="budget" id="item_title" class="form-control"
+                                                <input type="number" required  name="budget" id="item_title" class="form-control"
                                                     placeholder="e.g. '100000" />
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Ram</h5>
-                                                <input type="number" name="ram" id="item_title" class="form-control"
+                                                <input type="number" required name="ram" id="item_title" class="form-control"
                                                     placeholder="e.g. '8" />
 
                                                 <div class="spacer-20"></div>
 
                                                 <h5>Tipe Penyimpanan</h5>
-                                                <select name="storage_type" class="form-control">
+                                                <select name="storage_type" class="form-control" required>
                                                     <option value="" disabled selected>Pilih penyimpanan</option>
                                                     <option value="SSD">SSD</option>
                                                     <option value="HDD">HDD</option>
@@ -56,12 +56,12 @@
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Penyimpanan</h5>
-                                                <input type="number" name="storage" id="item_title" class="form-control"
+                                                <input type="number" name="storage" required id="item_title" class="form-control"
                                                     placeholder="e.g. '512" />
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Tipe Prosesor</h5>
-                                                <select name="processor" class="form-control">
+                                                <select name="processor" class="form-control" required>
                                                     <option value="" disabled selected>Pilih tipe prosesor</option>
                                                     <option value="Apple M1">Apple M1</option>
                                                     <option value="Apple M2">Apple M2</option>
@@ -75,7 +75,7 @@
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Ukuran Layar</h5>
-                                                <input type="number" name="screen_size" id="item_title"
+                                                <input type="number" required name="screen_size" id="item_title"
                                                     class="form-control" placeholder="e.g. '14" />
 
                                                 <div class="spacer-single"></div>

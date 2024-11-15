@@ -31,22 +31,6 @@
 
                             <div class="de_tab_content">
                                 <div class="tab-1">
-                                    <h6>Owner</h6>
-                                    <div class="item_author">
-                                        <div class="author_list_pp">
-                                            <a href="author.html">
-                                                <img class="lazy" src="{{ asset('images/author/author-10.jpg') }}"
-                                                    alt="">
-                                                <i class="fa fa-check"></i>
-                                            </a>
-                                        </div>
-                                        <div class="author_list_info">
-                                            <a href="author.html">Stacy Long</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="spacer-40"></div>
-                                    <h6>Lain lain</h6>
                                     <div class="row gx-2">
                                         <div class="col-lg-4 col-md-6 col-sm-6">
                                             <a href="#" class="nft_attr">
@@ -98,15 +82,6 @@
 
                             <div class="spacer-10"></div>
 
-                            <!-- Button trigger modal -->
-                            <a href="#" class="btn-main btn-lg" data-bs-toggle="modal" data-bs-target="#buy_now">
-                                Beli sekarang
-                            </a>
-                            &nbsp;
-                            <a href="#" class="btn-main btn-lg btn-light" data-bs-toggle="modal"
-                                data-bs-target="#place_a_bid">
-                                Keranjang
-                            </a>
 
                         </div>
 
