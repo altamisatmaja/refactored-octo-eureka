@@ -23,12 +23,24 @@
                                     <p>Masuk untuk mencoba fitur rekomendasi. Belum punya akun? <a href="/daftar">daftar
                                             disini<span></span></a>.
                                     </p>
-                                    <form name="contactForm" id='contact_form' class="form-border" method="post"
-                                        action='blank.php'>
 
+                                    <!-- Display error message if exists -->
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+
+                                    <form name="contactForm" id='contact_form' class="form-border" method="post"
+                                        action='{{ route('login') }}'>
+                                        @csrf
                                         <div class="field-set">
                                             <input type='text' name='email' id='email' class="form-control"
-                                                placeholder="username">
+                                                placeholder="e.g. admin@example.com" value="{{ old('email') }}">
                                         </div>
 
                                         <div class="field-set">
@@ -37,11 +49,10 @@
                                         </div>
 
                                         <div class="field-set">
-                                            <input type='submit' id='send_message' value='Masuk'
+                                            <input type='submit' value='Masuk'
                                                 class="btn btn-main btn-fullwidth color-2">
                                         </div>
 
-                                        <div class="clearfix"></div>
 
                                         <div class="spacer-single"></div>
 

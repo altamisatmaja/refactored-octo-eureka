@@ -16,15 +16,16 @@ class LoginPageController extends Controller
     }
 
     public function login(Request $request)
-    {
-        $credentials = $request->only('email', 'password');
+{
+    $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)) {
-            return redirect()->intended('/rekomendasi');
-        }
-
-        return redirect()->route('login')->withErrors('Login gagal. Cek email dan password Anda.');
+    if (Auth::attempt($credentials)) {
+        return redirect()->intended('/rekomendasi');
     }
+
+    return redirect()->route('login')->withErrors('Login gagal. Cek email dan password Anda.');
+}
+
 
     public function register(Request $request)
     {
