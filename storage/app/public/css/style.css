@@ -14175,6 +14175,8 @@ a.read_more i {
 
 .menu_side_area {
     margin-left: 20px;
+    display: block; /* Default to visible */
+
 }
 
 .rtl .menu_side_area {
@@ -16395,7 +16397,8 @@ img {
         position: relative;
         right: 0;
         text-align: right;
-        display: block;
+        display: none;
+
     }
 
     header .container {
