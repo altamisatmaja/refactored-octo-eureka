@@ -14,19 +14,16 @@
                 </div>
             </div>
 
-
-
             <!-- section begin -->
             <section aria-label="section">
                 <div class="container">
                     <div class="row wow fadeIn">
-                        @foreach ($products as $product)
+                        @forelse ($products as $product)
                             <div class="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="nft__item nft_type_music">
                                     <div class="nft__item_wrap">
                                         <a href="{{ route('produk.show', $product->slug) }}">
-                                            <img src="{{ asset($product->image) }}" class="lazy nft__item_preview"
-                                                alt="">
+                                            <img src="{{ asset($product->image) }}" class="lazy nft__item_preview" alt="">
                                         </a>
                                     </div>
                                     <div class="nft__item_info">
@@ -45,11 +42,16 @@
                                     </div>
                                 </div>
                             </div>
-                        @endforeach
+                            <div class="col-md-12 text-center">
+                                <a href="#" id="loadmore" class="btn-main wow fadeInUp lead">Load more</a>
+                            </div>
+                        @empty
+                            <div class="col-md-12 text-center">
+                                <p>Data produk tidak tersedia.</p>
+                            </div>
+                        @endforelse
 
-                        <div class="col-md-12 text-center">
-                            <a href="#" id="loadmore" class="btn-main wow fadeInUp lead">Load more</a>
-                        </div>
+
                     </div>
                 </div>
             </section>

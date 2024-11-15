@@ -116,9 +116,9 @@
                                 </div>
                             </div>
                         @endforeach
-                        <div class="col-md-12 text-center">
+                        {{-- <div class="col-md-12 text-center">
                             <a href="#" id="loadmore" class="btn-main wow fadeInUp lead">Load more</a>
-                        </div>
+                        </div> --}}
                     @endif
 
                 </div>
