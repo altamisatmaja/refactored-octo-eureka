@@ -2435,6 +2435,22 @@ class DatabaseSeeder extends Seeder
                 'color' => 'Grey',
                 'os' => 'Windows 11 + OHS',
             ],
+            [
+                'title' => 'adadada',
+                'slug' => 'adadad',
+                'description' => 'adada',
+                'brand' => 'Lenovo',
+                'price' => 14499000.0,
+                'ram' => 16,
+                'type_storage' => 'SSD',
+                'storage' => 512,
+                'processor' => 'Intel Core Ultra 7-155H',
+                'screen_size' => 14.0,
+                'image' => 'upload/images/bg-laptop-2.png.jpg',
+                'stock' => 27,
+                'color' => 'Grey',
+                'os' => 'Windows 11 + OHS',
+            ],
         ];
 
         foreach ($products as $product) {

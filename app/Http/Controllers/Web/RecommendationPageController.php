@@ -10,7 +10,7 @@ class RecommendationPageController extends Controller
 {
     public function index(Request $request)
     {
-        if ($request->has('budget') || $request->has('ram') || $request->has('storage') || $request->has('screen_size') || $request->has('storage_type') || $request->has('processor')) {
+        if ($request->has('budget') || $request->has('ram') || $request->has('storage') || $request->has('screen_size') || $request->has('storage_type') || $request->has('processor') || $request->has('count')) {
             $baseUrl = 'https://bot.refactoredoctoeureka.my.id/recommend';
 
             $queryParams = [
@@ -20,6 +20,7 @@ class RecommendationPageController extends Controller
                 'screen_size' => $request->input('screen_size', 0),
                 'type_storage' => $request->input('storage_type', ''),
                 'processor' => $request->input('processor', ''),
+                'count' => $request->input('count', 0),
             ];
 
             $response = Http::get($baseUrl, $queryParams);

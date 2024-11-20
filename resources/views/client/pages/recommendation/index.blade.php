@@ -37,13 +37,13 @@
                                             <div class="field-set">
 
                                                 <h5>Budget</h5>
-                                                <input type="number" required  name="budget" id="item_title" class="form-control"
-                                                    placeholder="e.g. '100000" />
+                                                <input type="number" required name="budget" id="item_title"
+                                                    class="form-control" placeholder="e.g. '100000" />
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Ram</h5>
-                                                <input type="number" required name="ram" id="item_title" class="form-control"
-                                                    placeholder="e.g. '8" />
+                                                <input type="number" required name="ram" id="item_title"
+                                                    class="form-control" placeholder="e.g. '8" />
 
                                                 <div class="spacer-20"></div>
 
@@ -56,8 +56,8 @@
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Penyimpanan</h5>
-                                                <input type="number" name="storage" required id="item_title" class="form-control"
-                                                    placeholder="e.g. '512" />
+                                                <input type="number" name="storage" required id="item_title"
+                                                    class="form-control" placeholder="e.g. '512" />
 
                                                 <div class="spacer-20"></div>
                                                 <h5>Tipe Prosesor</h5>
@@ -77,6 +77,11 @@
                                                 <h5>Ukuran Layar</h5>
                                                 <input type="number" required name="screen_size" id="item_title"
                                                     class="form-control" placeholder="e.g. '14" />
+
+                                                <div class="spacer-20"></div>
+                                                <h5>Jumlah data yang ingin didapat</h5>
+                                                <input type="number" required name="count" id="item_title"
+                                                    class="form-control" placeholder="e.g. '10" />
 
                                                 <div class="spacer-single"></div>
 
@@ -104,7 +109,7 @@
                                             <h4>{{ $product['title'] }}</h4>
                                         </a>
                                         <div class="nft__item_price">
-                                            Rp {{ $product['price'] }}<span>{{ $product['stock'] }} Stok</span>
+                                            Rp {{ $product['price'] }}
                                         </div>
                                         <div class="nft__item_action">
                                             <a href="{{ route('produk.show', $product['slug']) }}">Lihat detail</a>
@@ -116,9 +121,11 @@
                                 </div>
                             </div>
                         @endforeach
-                        {{-- <div class="col-md-12 text-center">
-                            <a href="#" id="loadmore" class="btn-main wow fadeInUp lead">Load more</a>
-                        </div> --}}
+                        @if (count($products['data']) > 8)
+                            <div class="col-md-12 text-center">
+                                <a href="#" id="loadmore" class="btn-main wow fadeInUp lead">Load more</a>
+                            </div>
+                        @endif
                     @endif
 
                 </div>

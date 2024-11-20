@@ -41,7 +41,7 @@
                                         <div class="col-lg-4 col-md-6 col-sm-6">
                                             <a href="#" class="nft_attr">
                                                 <h5>RAM</h5>
-                                                <h4>{{ $product->price }} GB</h4>
+                                                <h4>{{ $product->ram }} GB</h4>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
