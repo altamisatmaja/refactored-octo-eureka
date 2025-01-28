@@ -15,9 +15,9 @@
                     @foreach ($laptopBrands as $index => $brand)
                         <div class="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight item-spacing"
                             data-wow-delay="{{ 0.1 * ($index + 1) }}s">
-                            <a href="{{ route('categories', strtolower($brand)) }}" class="icon-box style-2 rounded">
-                                <i class="fa fa-laptop"></i>
-                                <span>{{ $brand }}</span>
+                            <a href="{{ route('categories', strtolower($brand['name'])) }}" class="icon-box style-2 rounded">
+                                <img src="{{ asset($brand['icon']) }}" style="width: 30px" alt="">
+                                <span>{{ $brand['name'] }}</span>
                             </a>
                         </div>
                     @endforeach
