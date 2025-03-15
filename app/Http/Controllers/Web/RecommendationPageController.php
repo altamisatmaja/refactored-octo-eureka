@@ -11,7 +11,11 @@ class RecommendationPageController extends Controller
     public function index(Request $request)
     {
         if ($request->has('budget') || $request->has('ram') || $request->has('storage') || $request->has('screen_size') || $request->has('storage_type') || $request->has('processor') || $request->has('count')) {
-            $baseUrl = 'https://bot.refactoredoctoeureka.my.id/recommend';
+            // for prod
+            // $baseUrl = 'https://bot.refactoredoctoeureka.my.id/recommend';
+
+            // for local
+            $baseUrl = 'http://127.0.0.1:5000/recommend';
 
             $queryParams = [
                 'price' => $request->input('budget', 0),
@@ -26,7 +30,11 @@ class RecommendationPageController extends Controller
             $response = Http::get($baseUrl, $queryParams);
 
             if ($response->successful()) {
-                $products = $response->json();
+                $products = collect($response->json());
+
+                $products = $products->sortBy('similarity')->reverse();
+            
+            
                 return view('client.pages.recommendation.index', compact('products'));
             } else {
                 return ['error' => 'Unable to fetch recommendations'];

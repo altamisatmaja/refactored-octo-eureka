@@ -63,14 +63,8 @@
                                                 <h5>Tipe Prosesor</h5>
                                                 <select name="processor" class="form-control" required>
                                                     <option value="" disabled selected>Pilih tipe prosesor</option>
-                                                    <option value="Apple M1">Apple M1</option>
-                                                    <option value="Apple M2">Apple M2</option>
-                                                    <option value="Intel Core i7">Intel Core i7</option>
-                                                    <option value="Intel Core i5">Intel Core i5</option>
-                                                    <option value="Intel Core i3">Intel Core i3</option>
-                                                    <option value="AMD Ryzen 7">AMD Ryzen 7</option>
-                                                    <option value="AMD Ryzen 5">AMD Ryzen 5</option>
-                                                    <option value="AMD Ryzen 3">AMD Ryzen 3</option>
+                                                    <option value="Intel">Intel</option>
+                                                    <option value="AMD">AMD</option>
                                                 </select>
 
                                                 <div class="spacer-20"></div>
@@ -103,19 +97,22 @@
                                             <img src="{{ asset($product['image']) }}" class="lazy nft__item_preview"
                                                 alt="">
                                         </a>
+                                        
                                     </div>
                                     <div class="nft__item_info">
                                         <a href="item-details.html">
                                             <h4>{{ $product['title'] }}</h4>
                                         </a>
+                                        
                                         <div class="nft__item_price">
                                             Rp {{ $product['price'] }}
                                         </div>
+                                        <i class="text-black nft__item_price text-sm"> {{ number_format($product['similarity'], 2, '.', '') }} kemiripan</i>
                                         <div class="nft__item_action">
                                             <a href="{{ route('produk.show', $product['slug']) }}">Lihat detail</a>
                                         </div>
                                         <div class="nft__item_like">
-                                            <i class="fa fa-heart"></i><span>{{ $product['brand'] }}</span>
+                                            <span>{{ $product['brand'] }}</span>
                                         </div>
                                     </div>
                                 </div>
