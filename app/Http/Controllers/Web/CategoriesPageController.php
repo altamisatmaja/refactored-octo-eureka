@@ -31,58 +31,7 @@ class CategoriesPageController extends Controller
                 'name' => 'Lenovo',
                 'icon' => 'upload/icons/logo-lenovo.png',
             ],
-            [
-                'name' => 'Apple',
-                'icon' => 'upload/icons/logo-apple.png',
-            ],
-            [
-                'name' => 'MSI',
-                'icon' => 'upload/icons/logo-msi.png',
-            ],
-            [
-                'name' => 'Samsung',
-                'icon' => 'upload/icons/logo-samsung.png',
-            ],
-            [
-                'name' => 'Toshiba',
-                'icon' => 'upload/icons/logo-toshiba.png',
-            ],
-            [
-                'name' => 'Razer',
-                'icon' => 'upload/icons/logo-razer.png',
-            ],
-            [
-                'name' => 'Sony',
-                'icon' => 'upload/icons/logo-sony.png',
-            ],
-            [
-                'name' => 'Huawei',
-                'icon' => 'upload/icons/logo-huawei.png',
-            ],
-            [
-                'name' => 'Microsoft',
-                'icon' => 'upload/icons/logo-microsoft.png',
-            ],
-            [
-                'name' => 'Gigabyte',
-                'icon' => 'upload/icons/logo-gigabyte.svg',
-            ],
-            [
-                'name' => 'Alienware',
-                'icon' => 'upload/icons/logo-alienware.png',
-            ],
-            [
-                'name' => 'LG',
-                'icon' => 'upload/icons/logo-lg.png',
-            ],
-            [
-                'name' => 'Fujitsu',
-                'icon' => 'upload/icons/logo-fujitsu.png',
-            ],
-            [
-                'name' => 'Panasonic',
-                'icon' => 'upload/icons/logo-panasonic.png',
-            ],
+
         ];
 
 

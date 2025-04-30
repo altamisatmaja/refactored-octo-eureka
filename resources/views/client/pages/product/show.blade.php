@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="item_info">
-                            Sisa stok {{ $product->stock }}
+                            {{-- Sisa stok {{ $product->stock }} --}}
                             <h2>{{ $product->title }}</h2>
                             <div class="item_info_views">
                                 <div class="nft-item-price">
@@ -48,6 +48,12 @@
                                             <a href="#" class="nft_attr">
                                                 <h5>Tipe penyimpanan</h5>
                                                 <h4>{{ $product->type_storage }}</h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-6">
+                                            <a href="#" class="nft_attr">
+                                                <h5>Storage</h5>
+                                                <h4>{{ $product->storage }}</h4>
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">

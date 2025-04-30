@@ -97,17 +97,18 @@
                                             <img src="{{ asset($product['image']) }}" class="lazy nft__item_preview"
                                                 alt="">
                                         </a>
-                                        
+
                                     </div>
                                     <div class="nft__item_info">
                                         <a href="item-details.html">
                                             <h4>{{ $product['title'] }}</h4>
                                         </a>
-                                        
+
                                         <div class="nft__item_price">
                                             Rp {{ $product['price'] }}
                                         </div>
-                                        <i class="text-black nft__item_price text-sm"> {{ number_format($product['similarity'], 2, '.', '') }} kemiripan</i>
+                                        <i class="text-black nft__item_price text-sm">
+                                            {{ number_format($product['similarity'], 2, '.', '') }} Cosine Similarity</i>
                                         <div class="nft__item_action">
                                             <a href="{{ route('produk.show', $product['slug']) }}">Lihat detail</a>
                                         </div>

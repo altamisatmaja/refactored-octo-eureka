@@ -18,7 +18,7 @@
             <section aria-label="section">
                 <div class="container">
                     <div class="row wow fadeIn">
-                        @if($products->isEmpty())
+                        @if ($products->isEmpty())
                             <div class="col-md-12 text-center">
                                 <p>Data produk tidak tersedia.</p>
                             </div>
@@ -28,7 +28,8 @@
                                     <div class="nft__item nft_type_music">
                                         <div class="nft__item_wrap">
                                             <a href="{{ route('produk.show', $product->slug) }}">
-                                                <img src="{{ asset($product->image) }}" class="lazy nft__item_preview" alt="">
+                                                <img src="{{ asset($product->image) }}" class="lazy nft__item_preview"
+                                                    alt="">
                                             </a>
                                         </div>
                                         <div class="nft__item_info">
@@ -36,7 +37,7 @@
                                                 <h4>{{ $product->title }}</h4>
                                             </a>
                                             <div class="nft__item_price">
-                                                Rp {{ $product->price }}<span>{{ $product->stock }} Stok</span>
+                                                Rp {{ $product->price }}
                                             </div>
                                             <div class="nft__item_action">
                                                 <a href="{{ route('produk.show', $product->slug) }}">Lihat detail</a>
